@@ -31,7 +31,7 @@ public class UserController {
 
     @RequestMapping(method= RequestMethod.POST,value="/addUser")
     #@CrossOrigin("Access-Control-Allow-Origin: *")
-    @@CrossOrigin("*")
+    @CrossOrigin("*")
     public ResponseEntity<Boolean> addUser(@RequestBody User user) {
         boolean isSucess=false;
         try {
